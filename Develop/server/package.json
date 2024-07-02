@@ -1,15 +1,13 @@
 {
-  "name": "server",
+  "name": "your-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Your MERN stack project description",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
     "express": "^4.17.1",
